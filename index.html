@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <style>
+        body { background: #222; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        h1 { color: #fff; margin-bottom: 20px; }
+        #gameCanvas { background: #111; border: 2px solid #5dc5ff; border-radius: 8px; display: block; margin-bottom: 16px; }
+        #score { color: #fff; font-size: 1.2em; margin-bottom: 10px; }
+        #instructions { color: #aaa; margin-bottom: 20px; }
+        button { padding: 8px 18px; border: none; background: #5dc5ff; color: #fff; border-radius: 5px; font-size: 1em; cursor: pointer; transition: background 0.2s; }
+        button:hover { background: #2d6cdf; }
+    </style>
+</head>
+<body>
+    <h1>Snake Game</h1>
+    <div id="score">점수: 0</div>
+    <div id="instructions">방향키로 조작하세요. (모바일: 화면 터치)</div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <button onclick="restartGame()">다시 시작</button>
+    <script src="snake.js"></script>
+</body>
+</html>
